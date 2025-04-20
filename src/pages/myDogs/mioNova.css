@@ -33,12 +33,12 @@
     padding: 2rem;
   }
   
-  .dog-gallery-photo {
+  .dog-gallery-photo{
     padding: 0.5rem;
     aspect-ratio: 3 / 4; /* taller for caption space */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   .dog-gallery-photo img {
@@ -47,7 +47,11 @@
     transition: transform 0.3s ease;
   }
   
-  .dog-gallery-mionova-image.scaled {
+  .dog-gallery-mionova-image-v.scaled {
+    transform: scale(1.4);
+  }  
+
+  .dog-gallery-mionova-image-h.scaled {
     transform: scale(1.4);
   }  
 }
@@ -74,10 +78,13 @@
     transition: transform 0.3s ease;
   }
   
-  .dog-gallery-mionova-image.scaled {
+  .dog-gallery-mionova-image-v.scaled {
     transform: scale(1.5);
   }
-  
+
+  .dog-gallery-mionova-image-h.scaled {
+    transform: scale(1.5);
+  }
 }
 
 .dog-grid h3 {

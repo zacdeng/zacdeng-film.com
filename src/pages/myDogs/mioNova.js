@@ -2,8 +2,7 @@ import { useState } from 'react';
 import "./mioNova.css"
 
 function MioAndNova() {
-  const photoUrls = [
-    // web 3:4 first row
+  const photoUrlsVertical = [
     'https://s2.loli.net/2025/04/21/He9xKblsRZE8iGn.jpg',
     'https://s2.loli.net/2025/04/21/NutP4DxFrlUIRsk.jpg',
     'https://s2.loli.net/2025/04/21/7fNpk5WtrFSyq1X.jpg',
@@ -13,7 +12,7 @@ function MioAndNova() {
     'https://s2.loli.net/2025/04/21/tkKprQaquPC753z.jpg',
     'https://s2.loli.net/2025/04/21/iI6BNrthC8EGMD9.jpg',
 
-    // web 3:4 second row
+
     'https://s2.loli.net/2025/04/21/B4v6Ep9sOSjRIFb.jpg',
     'https://s2.loli.net/2025/04/21/wKFdHigybC5hpGs.jpg',
     'https://s2.loli.net/2025/04/21/CtPvWcKLMly5dk2.jpg',
@@ -22,24 +21,26 @@ function MioAndNova() {
     'https://s2.loli.net/2025/04/20/FSgi5CeRJ2pP7xa.jpg',
     'https://s2.loli.net/2025/04/20/cBwUDvs5fMuA38Z.jpg',
     'https://s2.loli.net/2025/04/20/vUyY14a7V8LHJpi.jpg',
+  ];
 
-    // 4:3 first row
+  const photoUrlsHorizonal = [
     'https://s2.loli.net/2025/04/21/sJq6xh428OEFZiy.jpg',
     'https://s2.loli.net/2025/04/21/hbvTYS1arVk8cpj.jpg',
     'https://s2.loli.net/2025/04/21/E51pHhQ6WzFmX82.jpg',
     'https://s2.loli.net/2025/04/21/NWptARDU3bmu9sq.jpg'
-  ];
+  ]
 
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState("");
 
-  const handleMouseEnter = (index) => {
+  const handleMouseEnter = (index, isVertical) => {
     setTimeout(() => {
-      setHoveredIndex(index);
+      setHoveredIndex(`${index}${isVertical ? '_v' : '_h'}`);
+      console.log(hoveredIndex);
     }, 300); // 0.5 second
   };
 
   const handleMouseLeave = () => {
-    setHoveredIndex(null);
+    setHoveredIndex("");
   };
 
   return (
@@ -61,14 +62,29 @@ function MioAndNova() {
         
         <div className="dog-gallery-container">
           {
-            photoUrls.map((photoUrl, index) => (
+            photoUrlsVertical.map((photoUrl, index) => (
               <div key={index} className="dog-gallery-photo">
                 <img 
                   key={index} 
                   src={photoUrl}
-                  alt={`Gallery ${index}`}
-                  className={`dog-gallery-mionova-image ${hoveredIndex === index ? 'scaled' : ''}`}
-                  onMouseEnter={() => handleMouseEnter(index)}
+                  alt={`Gallery-v ${index}`}
+                  className={`dog-gallery-mionova-image-v ${hoveredIndex === index + '_v' ? 'scaled' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(index, true)}
+                  onMouseLeave={handleMouseLeave}
+                  loading="lazy"
+                />
+              </div>
+            ))
+          }
+          {
+            photoUrlsHorizonal.map((photoUrl, index) => (
+              <div key={index} className="dog-gallery-photo">
+                <img 
+                  key={index} 
+                  src={photoUrl}
+                  alt={`Gallery-h ${index}`}
+                  className={`dog-gallery-mionova-image-h ${hoveredIndex === (index + '_h') ? 'scaled' : ''}`}
+                  onMouseEnter={() => handleMouseEnter(index, false)}
                   onMouseLeave={handleMouseLeave}
                   loading="lazy"
                 />
