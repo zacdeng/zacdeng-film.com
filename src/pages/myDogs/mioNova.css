@@ -21,7 +21,7 @@
 }
 
 /* Desktop layout: 2 columns */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .dog-grid {
     grid-template-columns: 0.5fr 3fr;
   }
@@ -52,12 +52,13 @@
   }  
 }
 
+/* Mobile View Settings */
 @media (max-width: 768px) {
   .dog-gallery-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
     gap: 1.5rem;
-    padding: 0.5rem;
+    padding-top: 1rem;
   }
   
   .dog-gallery-photo {

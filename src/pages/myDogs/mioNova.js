@@ -70,6 +70,7 @@ function MioAndNova() {
                   className={`dog-gallery-mionova-image ${hoveredIndex === index ? 'scaled' : ''}`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
+                  loading="lazy"
                 />
               </div>
             ))

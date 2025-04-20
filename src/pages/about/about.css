@@ -21,7 +21,7 @@
 }
 
 /* Desktop layout: 2 columns */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr 3fr;
   }

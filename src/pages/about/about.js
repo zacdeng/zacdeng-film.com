@@ -27,9 +27,10 @@ function About() {
           </div>
           
           <p className='equipment'><b>EQUIPMENTS</b></p>
-          <p>Bronica SQA</p>
           <p>Rollei 35 s</p>
+          <p>Bronica SQA</p>
           <p>Fujifilm xs20</p>
+          <p>Fujifilm Instax Wide 300 / Mini 90</p>
         </div>
         
         <div className="about-photo">

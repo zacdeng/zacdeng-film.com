@@ -7,8 +7,9 @@ import Instant from './pages/instant/instant.js';
 import Landscape from './pages/film/landscape.js'
 import NoirNotes from './pages/film/noirNotes.js'
 import CityMuse from './pages/film/cityMuse.js'
-import "./App.css";
 import MioAndNova from "./pages/myDogs/mioNova.js";
+import ScrollToTop from "./components/ScrollToTop";
+import "./App.css";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -30,7 +31,9 @@ function App() {
       <BrowserRouter>
         <div className="app-container">
           <div className="mobile-header">
-            <Link to="/"><img className="mobile-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" /></Link>
+            <Link to="/" onClick={() => setMenuOpen(false)}>
+              <img className="mobile-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" />
+            </Link>
             <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
               { menuOpen ? '✘' : '☰' }
             </button>
@@ -39,7 +42,7 @@ function App() {
           <nav className={`sidebar ${menuOpen ? "show" : ""}`}>
             <ul>
               <li>
-                <b>Film</b>
+                <b>Film Collections</b>
                 <ul className="sub-links">
                   <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
@@ -53,6 +56,7 @@ function App() {
           </nav>
 
           <main className="main-content">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/film/landscape" element={<Landscape />} />
@@ -74,7 +78,7 @@ function App() {
             <Link to="/"><img className="web-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" /></Link>
             <ul>
               <li>
-                Film
+                Film Collections
                 <ul className="sub-links">
                   <li><Link to="/film/landscape">Landscape</Link></li>
                   <li><Link to="/film/citymuse">Civic Muse</Link></li>

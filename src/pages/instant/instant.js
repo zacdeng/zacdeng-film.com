@@ -39,6 +39,7 @@ function Instant() {
         </div>
         
         <div className="instant-gallery-container">
+          <p>Currently working on scanning the instant films, images are coming soon...</p>
           <div className="gallery-vertical">
             {
               horizontalPhotoUrls.map((photoUrl, index) => (

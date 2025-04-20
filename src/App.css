@@ -5,7 +5,7 @@
 }
 
 /* Web View */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .sidebar {
     width: 200px;
     color: white;
