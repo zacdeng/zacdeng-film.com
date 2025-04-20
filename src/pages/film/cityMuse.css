@@ -1,0 +1,94 @@
+.cityMuse-gallery-container {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .cityMuse-gallery-scroll {
+    display: flex;
+    flex-wrap: wrap;               /* Enable multiple rows */
+    overflow-x: auto;
+    gap: 2rem;
+    row-gap: 3rem;
+    padding: 1rem 1rem 2rem;
+    scroll-snap-type: x mandatory;
+    max-height: 90vh;              /* Optional max height to limit vertical scroll */
+  }
+  
+  .cityMuse-gallery-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .cityMuse-gallery-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+  
+  .cityMuse-photo-wrapper {
+    flex: 0 0 calc(16% - 1rem);    /* 6 images per row with gap */
+    scroll-snap-align: start;
+    margin-bottom: 1rem;
+  }
+  
+  .cityMuse-gallery-image {
+    max-width: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .cityMuse-gallery-image.scaled {
+    transform: scale(1.03);
+  }
+  
+  .cityMuse-photo-caption {
+    margin-top: 1rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Show caption on hover */
+  .cityMuse-photo-wrapper:hover .cityMuse-photo-caption {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cityMuse-photo-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35%;
+  }
+  
+  .cityMuse-gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .cityMuse-photo-caption {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Show caption on hover */
+  .cityMuse-photo-wrapper:hover .cityMuse-photo-caption {
+    opacity: 1;
+  }
+}

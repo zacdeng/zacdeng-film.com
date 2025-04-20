@@ -1,0 +1,38 @@
+.instant-container {
+  padding: 1rem 1rem;
+  background-color: #f9fafb;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.instant-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  color: #374151;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Desktop layout: 2 columns */
+@media (min-width: 992px) {
+  .instant-grid {
+    grid-template-columns: 0.5fr 3fr;
+  }
+}
+
+.instant-grid h3 {
+  font-size: large;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+.instant-grid p {
+  font-size: 0.9rem;
+}

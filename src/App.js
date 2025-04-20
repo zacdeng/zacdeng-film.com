@@ -1,25 +1,107 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+
+import Home from './pages/home/home.js';
+import About from './pages/about/about.js';
+import Instant from './pages/instant/instant.js';
+import Landscape from './pages/film/landscape.js'
+import NoirNotes from './pages/film/noirNotes.js'
+import CityMuse from './pages/film/cityMuse.js'
+import "./App.css";
+import MioAndNova from "./pages/myDogs/mioNova.js";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <BrowserRouter>
+        <div className="app-container">
+          <div className="mobile-header">
+            <Link to="/"><img className="mobile-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" /></Link>
+            <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+              { menuOpen ? '✘' : '☰' }
+            </button>
+          </div>
+
+          <nav className={`sidebar ${menuOpen ? "show" : ""}`}>
+            <ul>
+              <li>
+                <b>Film</b>
+                <ul className="sub-links">
+                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
+                  <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
+                  <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li>
+                </ul>
+              </li>
+              <li><Link to="/mioandnova" onClick={() => setMenuOpen(false)}><b>Mio and Nova</b></Link></li>
+              <li><Link to="/instant" onClick={() => setMenuOpen(false)}><b>The Instant Archive</b></Link></li>
+              <li><Link to="/about" onClick={() => setMenuOpen(false)}><b>About Me</b></Link></li>
+            </ul>
+          </nav>
+
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/film/landscape" element={<Landscape />} />
+              <Route path="/film/citymuse" element={<CityMuse />} />
+              <Route path="/film/noirnotes" element={<NoirNotes />} />
+              <Route path="/mioandnova" element={<MioAndNova />} />
+              <Route path="/instant" element={<Instant />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+        </div>
+      </BrowserRouter>
+    )
+  } else {
+    return (
+      <BrowserRouter>
+        <div className="app-container">
+          <nav className="sidebar">
+            <Link to="/"><img className="web-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" /></Link>
+            <ul>
+              <li>
+                Film
+                <ul className="sub-links">
+                  <li><Link to="/film/landscape">Landscape</Link></li>
+                  <li><Link to="/film/citymuse">Civic Muse</Link></li>
+                  <li><Link to="/film/noirnotes">Noir Notes</Link></li>
+                </ul>
+              </li>
+              <li><Link to="/mioandnova">Mio and Nova</Link></li>
+              <li><Link to="/instant">The Instant Archive</Link></li>
+              <li><Link to="/about">About Me</Link></li>
+            </ul>
+          </nav>
+  
+          <main className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/film/landscape" element={<Landscape />} />
+              <Route path="/film/citymuse" element={<CityMuse />} />
+              <Route path="/film/noirnotes" element={<NoirNotes />} />
+              <Route path="/mioandnova" element={<MioAndNova/>} />
+              <Route path="/instant" element={<Instant />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+        </div>
+      </BrowserRouter>
+    );
+  }
 }
 
 export default App;

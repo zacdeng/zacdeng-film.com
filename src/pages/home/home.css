@@ -1,0 +1,127 @@
+.home-title {
+  padding: 2rem;
+}
+
+.home-title img {
+  margin-left: 0.75rem;
+}
+
+.home-title a:hover {
+  text-decoration: underline;
+}
+
+.gallery-container {
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 769px) {
+  .home-title a {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  .gallery-scroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 3rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc transparent;
+  }
+  
+  .gallery-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .gallery-scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+  }
+  
+  .photo-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 0 35%;
+    scroll-snap-align: start;
+  }
+  
+  .gallery-image {
+    max-width: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-image.scaled {
+    transform: scale(1.03);
+  }
+  
+  .photo-caption {
+    margin-top: 2rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Show caption on hover */
+  .photo-wrapper:hover .photo-caption {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-title a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .photo-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 35%;
+  }
+  
+  .gallery-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .photo-caption {
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Show caption on hover */
+  .photo-wrapper:hover .photo-caption {
+    opacity: 1;
+  }
+}

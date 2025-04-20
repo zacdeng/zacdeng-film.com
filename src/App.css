@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Web View */
+.app-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Web View */
+@media (min-width: 769px) {
+  .sidebar {
+    width: 200px;
+    color: white;
+    padding: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .sidebar .web-signature {
+    padding-top: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1rem;
+    width: 130px;
+    height: 42px;
+  }
+
+  .sidebar li {
+    margin: 1rem 0;
+    color: #000000;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .sub-links {
+    list-style: none;
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+  }
+
+  .sub-links li {
+    margin: 0.25rem 0;
+  }
+
+  .sub-links a {
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .main-content {
+    flex-grow: 1;
+    padding: 2rem;
+    background-color: #f9fafb;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile View */
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;              /* Change from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100vw;                 /* Full width */
+    height: 100vh;                /* Full height */
+    background: #ffffff;
+    padding-top: 4rem;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;             /* In case the menu gets tall */
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .sidebar.show {
+    transform: translateX(0);     /* Slide in from left */
   }
+
+  .sidebar li {
+    margin: 1rem 0;
+    color: #000000;
+    font-size: medium;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .sidebar ul {
+    margin-bottom: 2rem;
+  }
+
+  .main-content {
+    padding-top: 4rem;
+    z-index: 1;
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;             /* So it stays visible */
+    top: 0.6rem;
+    right: 0;
+    z-index: 1100;               /* Above sidebar */
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  /* Mobile header container */
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1100;
+  }
+
+  /* Signature image in mobile header */
+  .mobile-signature {
+    height: 35px;
+    width: 100%;
+    margin-top: 0.6rem;
+    margin-left: 1.8rem;
+    object-fit: contain;
+  }
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  text-decoration: underline;
+}
+
+.sub-links a:hover {
+  text-decoration: underline;
 }
