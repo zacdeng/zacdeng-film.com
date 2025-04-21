@@ -35,7 +35,6 @@ function MioAndNova() {
   const handleMouseEnter = (index, isVertical) => {
     setTimeout(() => {
       setHoveredIndex(`${index}${isVertical ? '_v' : '_h'}`);
-      console.log(hoveredIndex);
     }, 300); // 0.5 second
   };
 

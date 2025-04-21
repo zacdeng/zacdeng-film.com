@@ -7,8 +7,9 @@ import Instant from './pages/instant/instant.js';
 import Landscape from './pages/film/landscape.js'
 import NoirNotes from './pages/film/noirNotes.js'
 import CityMuse from './pages/film/cityMuse.js'
-import MioAndNova from "./pages/myDogs/mioNova.js";
-import ScrollToTop from "./components/ScrollToTop";
+import MioAndNova from './pages/myDogs/mioNova.js';
+import MediumFormat from './pages/mediumFormat/mediumFormat.js';
+import ScrollToTop from './components/ScrollToTop';
 import "./App.css";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
   if (isMobile) {
     return (
       <BrowserRouter>
-        <div className="app-container">
+        <div className="mobile-wrapper">
           <div className="mobile-header">
             <Link to="/" onClick={() => setMenuOpen(false)}>
               <img className="mobile-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" />
@@ -49,6 +50,7 @@ function App() {
                   <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li>
                 </ul>
               </li>
+              <li><Link to="/mediumformat" onClick={() => setMenuOpen(false)}><b>Stillness in Squares</b></Link></li>
               <li><Link to="/mioandnova" onClick={() => setMenuOpen(false)}><b>Mio and Nova</b></Link></li>
               <li><Link to="/instant" onClick={() => setMenuOpen(false)}><b>The Instant Archive</b></Link></li>
               <li><Link to="/about" onClick={() => setMenuOpen(false)}><b>About Me</b></Link></li>
@@ -73,30 +75,33 @@ function App() {
   } else {
     return (
       <BrowserRouter>
-        <div className="app-container">
+        <div className="desktop-wrapper">
           <nav className="sidebar">
             <Link to="/"><img className="web-signature" src="https://s2.loli.net/2025/04/21/GHJQBVZzCadyRtK.png" alt="signature" /></Link>
             <ul>
               <li>
                 Film Collections
                 <ul className="sub-links">
-                  <li><Link to="/film/landscape">Landscape</Link></li>
-                  <li><Link to="/film/citymuse">Civic Muse</Link></li>
-                  <li><Link to="/film/noirnotes">Noir Notes</Link></li>
+                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
+                  <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
+                  <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li>
                 </ul>
               </li>
-              <li><Link to="/mioandnova">Mio and Nova</Link></li>
-              <li><Link to="/instant">The Instant Archive</Link></li>
-              <li><Link to="/about">About Me</Link></li>
+              <li><Link to="/mediumformat" onClick={() => setMenuOpen(false)}>Stillness in Squares</Link></li>
+              <li><Link to="/mioandnova" onClick={() => setMenuOpen(false)}>Mio and Nova</Link></li>
+              <li><Link to="/instant" onClick={() => setMenuOpen(false)}>The Instant Archive</Link></li>
+              <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Me</Link></li>
             </ul>
           </nav>
   
           <main className="main-content">
+            <ScrollToTop />
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/film/landscape" element={<Landscape />} />
               <Route path="/film/citymuse" element={<CityMuse />} />
               <Route path="/film/noirnotes" element={<NoirNotes />} />
+              <Route path="/mediumformat" element={<MediumFormat />} />
               <Route path="/mioandnova" element={<MioAndNova/>} />
               <Route path="/instant" element={<Instant />} />
               <Route path="/about" element={<About />} />
