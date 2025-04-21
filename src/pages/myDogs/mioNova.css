@@ -28,7 +28,7 @@
 
   .dog-gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 1rem;
     padding: 2rem;
   }
@@ -94,6 +94,6 @@
 }
 
 .dog-grid p {
-  font-size: 0.9rem;
+  font-size: 16px;
 }
 
