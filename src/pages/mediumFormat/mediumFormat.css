@@ -40,7 +40,7 @@
 /* Mobile layout */
 @media (max-width: 768px) {
   .mediumFormat-grid h3 {
-    font-size: 20px;
+    font-size: large;
     color: #111827;
     margin-bottom: 3rem;
   }

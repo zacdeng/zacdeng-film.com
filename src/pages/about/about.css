@@ -32,6 +32,10 @@
     margin-bottom: 3rem;
   }
 
+  .about-info p {
+    font-size: 16px;
+  }
+  
   .about-info .equipment {
     margin-top: 4rem;
   }
@@ -49,10 +53,6 @@
     aspect-ratio: 3.5 / 4;  /* portrait-style; adjust as needed */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
-
-  .about-info p {
-    font-size: 16px;
-  }
 }
 
 /* Mobile View */
@@ -65,6 +65,10 @@
     font-size: large;
     color: #111827;
     margin-bottom: 1rem;
+  }
+
+  .about-info p {
+    font-size: 15px;
   }
 
   .about-info .equipment {
@@ -82,10 +86,6 @@
     object-fit: cover;
     aspect-ratio: 3 / 4;  /* portrait-style; adjust as needed */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .about-info p {
-    font-size: 15px;
   }
 }
 
