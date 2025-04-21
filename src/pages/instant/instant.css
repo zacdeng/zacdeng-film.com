@@ -21,18 +21,31 @@
 }
 
 /* Desktop layout: 2 columns */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .instant-grid {
     grid-template-columns: 0.5fr 3fr;
   }
+
+  .instant-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .instant-grid p {
+    font-size: 16px;
+  }
 }
 
-.instant-grid h3 {
-  font-size: 20px;
-  color: #111827;
-  margin-bottom: 3rem;
-}
-
-.instant-grid p {
-  font-size: 16px;
+/* Mobile layout */
+@media (max-width: 768px) {
+  .instant-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .instant-grid p {
+    font-size: 15px;
+  }
 }

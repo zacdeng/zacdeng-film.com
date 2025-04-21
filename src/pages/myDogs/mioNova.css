@@ -54,6 +54,16 @@
   .dog-gallery-mionova-image-h.scaled {
     transform: scale(1.4);
   }  
+
+  .dog-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .dog-grid p {
+    font-size: 16px;
+  }
 }
 
 /* Mobile View Settings */
@@ -85,15 +95,15 @@
   .dog-gallery-mionova-image-h.scaled {
     transform: scale(1.5);
   }
-}
 
-.dog-grid h3 {
-  font-size: 20px;
-  color: #111827;
-  margin-bottom: 3rem;
-}
-
-.dog-grid p {
-  font-size: 16px;
+  .dog-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .dog-grid p {
+    font-size: 15px;
+  }
 }
 

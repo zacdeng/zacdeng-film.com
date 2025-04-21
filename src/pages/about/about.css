@@ -55,6 +55,7 @@
   }
 }
 
+/* Mobile View */
 @media (max-width: 768px) {
   p {
     margin-bottom: -0.25rem;    /* space between paragraphs */
@@ -84,7 +85,7 @@
   }
 
   .about-info p {
-    font-size: small;
+    font-size: 15px;
   }
 }
 

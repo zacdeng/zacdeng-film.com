@@ -64,6 +64,7 @@ function App() {
               <Route path="/film/landscape" element={<Landscape />} />
               <Route path="/film/citymuse" element={<CityMuse />} />
               <Route path="/film/noirnotes" element={<NoirNotes />} />
+              <Route path="/mediumformat" element={<MediumFormat />} />
               <Route path="/mioandnova" element={<MioAndNova />} />
               <Route path="/instant" element={<Instant />} />
               <Route path="/about" element={<About />} />

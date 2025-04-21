@@ -2,14 +2,9 @@ import { useState } from 'react';
 import "./mediumFormat.css"
 
 function MediumFormat() {
-  const horizontalPhotoUrls = [
+  const photoUrls = [
 
   ];
-
-  const verticalPhotoUrls = [
-
-  ];
-
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -23,9 +18,9 @@ function MediumFormat() {
   };
 
   return (
-    <div className="instant-container">
-      <div className="instant-grid">
-        <div className="instant-info">
+    <div className="mediumFormat-container">
+      <div className="mediumFormat-grid">
+        <div className="mediumFormat-info">
           <h3>Stillness in Squares - 120mm</h3>
           <p>This section is dedicated to my work with 120mm medium format film, all captured using the Bronica SQA — a beautifully crafted mechanical camera that rewards patience and precision. 
             Shooting with 120mm film isn't about speed or convenience; it's about slowing down and being intentional with each frame. With only 12 exposures per roll, 
@@ -38,31 +33,16 @@ function MediumFormat() {
           <p>These images are not just documents — they're meditations. A slower shutter, a heavier frame, and a softer pace. That's the beauty of 120mm.</p>
         </div>
         
-        <div className="instant-gallery-container">
+        <div className="mediumFormat-gallery-container">
           <p>Currently working on scanning the 120mm films, images are coming soon...</p>
-          <div className="gallery-vertical">
+          <div className="gallery-wrapper">
             {
-              horizontalPhotoUrls.map((photoUrl, index) => (
+              photoUrls.map((photoUrl, index) => (
                 <img 
                   key={index} 
                   src={photoUrl}
-                  alt={`Gallery Horizontal ${index}`}
-                  className={`gallery-image-horizontal ${hoveredIndex === index ? 'scaled' : ''}`}
-                  onMouseEnter={() => handleMouseEnter(index)}
-                  onMouseLeave={handleMouseLeave}
-                />
-              ))
-            }
-          </div>
-
-          <div className="gallery-horizontal">
-            {
-              verticalPhotoUrls.map((photoUrl, index) => (
-                <img 
-                  key={index} 
-                  src={photoUrl}
-                  alt={`Gallery Vertical ${index}`}
-                  className={`gallery-image-vertical ${hoveredIndex === index ? 'scaled' : ''}`}
+                  alt={`Gallery ${index}`}
+                  className={`gallery-image ${hoveredIndex === index ? 'scaled' : ''}`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 />

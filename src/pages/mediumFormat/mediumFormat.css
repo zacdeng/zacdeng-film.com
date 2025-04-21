@@ -1,4 +1,4 @@
-.instant-container {
+.mediumFormat-container {
   padding: 1rem 1rem;
   background-color: #f9fafb;
   min-height: 90vh;
@@ -6,7 +6,7 @@
   justify-content: center;
 }
 
-.instant-grid {
+.mediumFormat-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -21,18 +21,32 @@
 }
 
 /* Desktop layout: 2 columns */
-@media (min-width: 992px) {
-  .instant-grid {
+@media (min-width: 768px) {
+  .mediumFormat-grid {
     grid-template-columns: 0.5fr 3fr;
+  }
+
+  .mediumFormat-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .mediumFormat-grid p {
+    font-size: 16px;
   }
 }
 
-.instant-grid h3 {
-  font-size: 20px;
-  color: #111827;
-  margin-bottom: 3rem;
+/* Mobile layout */
+@media (max-width: 768px) {
+  .mediumFormat-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+  }
+  
+  .mediumFormat-grid p {
+    font-size: 15px;
+  }
 }
 
-.instant-grid p {
-  font-size: 16px;
-}

@@ -68,7 +68,7 @@
   
   .photo-caption {
     margin-top: 2rem;
-    font-size: 15px;
+    font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #374151;
     opacity: 0;
@@ -114,7 +114,7 @@
   .photo-caption {
     margin-top: 0.5rem;
     margin-bottom: 2rem;
-    font-size: 15px;
+    font-size: small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #374151;
     opacity: 0;
