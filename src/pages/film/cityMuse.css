@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+.desktop-citymuse-wrapper {
   .cityMuse-gallery-scroll {
     display: flex;
     flex-wrap: wrap;               /* Enable multiple rows */
@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 768px) {
+.mobile-citymuse-wrapper {
   .cityMuse-photo-wrapper {
     position: relative;
     display: flex;

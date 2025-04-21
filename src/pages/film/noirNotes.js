@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useDevice from '../../hooks/useDevice.js'
 import "./noirNotes.css";
 
 function NoirNotes() {
@@ -11,6 +12,7 @@ function NoirNotes() {
     
   ];
 
+  const isMobile = useDevice();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -24,7 +26,7 @@ function NoirNotes() {
   };
 
   return (
-    <div className="noirnotes-container">
+    <div className={isMobile ? 'mobile-noirnotes-wrapper' : 'desktop-noirnotes-wrapper'}>
       <div className="noirnotes-grid">
         <div className="noirnotes-gallery-container">
           <div className="noirnotes-gallery-scroll">

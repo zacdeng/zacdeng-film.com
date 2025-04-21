@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useDevice from '../../hooks/useDevice.js'
 import "./landscape.css";
 
 function Landscape() {
@@ -9,6 +10,7 @@ function Landscape() {
     { src: 'https://s2.loli.net/2025/04/20/6s8Hv4IyVapOdFr.jpg', caption: "Old St. Hilary's Landmark" },
   ];
 
+  const isMobile = useDevice();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -22,7 +24,7 @@ function Landscape() {
   };
 
   return (
-    <div className="landscape-container">
+    <div className={isMobile ? 'mobile-landscape-wrapper' : 'desktop-landscape-wrapper'}>
       <div className="landscape-grid">
         <div className="landscape-gallery-container">
           <div className="landscape-gallery-scroll">

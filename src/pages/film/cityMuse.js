@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useDevice from '../../hooks/useDevice.js'
 import "./cityMuse.css";
 
 function CityMuse() {
@@ -9,6 +10,7 @@ function CityMuse() {
     { src: 'https://s2.loli.net/2025/04/20/IK8PAuyQ6ahGr2q.jpg', caption: "Chapel of St. Basil, Houston" },
   ];
 
+  const isMobile = useDevice();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -22,7 +24,7 @@ function CityMuse() {
   };
 
   return (
-    <div className="cityMuse-container">
+    <div className={isMobile ? 'mobile-citymuse-wrapper' : 'desktop-citymuse-wrapper'}>
       <div className="cityMuse-grid">
         <div className="cityMuse-gallery-container">
           <div className="cityMuse-gallery-scroll">

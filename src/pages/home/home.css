@@ -15,7 +15,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+.desktop-wrapper {
   .home-title a {
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
   }
 }
 
-@media (max-width: 768px) {
+.mobile-wrapper {
   .home-title a {
     display: flex;
     align-items: center;

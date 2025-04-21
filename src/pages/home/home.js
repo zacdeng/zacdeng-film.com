@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import useDevice from '../../hooks/useDevice.js'
 import "./home.css";
 
 function Home() {
@@ -12,6 +13,7 @@ function Home() {
     { src: 'https://s2.loli.net/2025/04/21/4BUEkKiSwJxaGdu.jpg', caption: "San Francisco" },
   ];
 
+  const isMobile = useDevice();
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const handleMouseEnter = (index) => {
@@ -25,7 +27,7 @@ function Home() {
   };
 
   return (
-    <div className="home-container">
+    <div className={isMobile ? 'mobile-wrapper' : 'desktop-wrapper'}>
       <div className="home-grid">
         <div className="home-info">
 

@@ -3,7 +3,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 768px) {
+.desktop-landscape-wrapper {
   .landscape-gallery-scroll {
     display: flex;
     flex-wrap: wrap;               /* Enable multiple rows */
@@ -57,7 +57,7 @@
   }
 }
 
-@media (max-width: 768px) {
+.mobile-landscape-wrapper {
   .landscape-photo-wrapper {
     position: relative;
     display: flex;
