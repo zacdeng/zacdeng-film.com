@@ -8,6 +8,7 @@ function CityMuse() {
     { src: 'https://s2.loli.net/2025/04/20/ZlfRV7SADnq6QuL.jpg', caption: "Pit Room, Houston" },
     { src: 'https://s2.loli.net/2025/04/20/JxfuLVpAbEeFSUK.jpg', caption: "The Museum of Fine Arts, Houston" },
     { src: 'https://s2.loli.net/2025/04/20/IK8PAuyQ6ahGr2q.jpg', caption: "Chapel of St. Basil, Houston" },
+    { src: 'https://s2.loli.net/2025/04/23/amNUq6IFAKiwXJu.jpg', caption: "Chapel of St. Basil, Houston" },
   ];
 
   const isMobile = useDevice();
