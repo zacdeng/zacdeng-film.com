@@ -4,9 +4,8 @@ import "./noirNotes.css";
 
 function NoirNotes() {
   const photoInfos = [
+    { src: 'https://s2.loli.net/2025/04/20/pDzFT7rOjv6nlc4.jpg', caption: "Hyatt Regency, Houston Downtown"},
     { src: 'https://s2.loli.net/2025/04/21/4BUEkKiSwJxaGdu.jpg', caption: "San Francisco" },
-    { src: 'https://s2.loli.net/2025/04/21/DFgd3wxCWYUmG6V.jpg', caption: "Blue Bottle, San Francisco" },
-    { src: 'https://s2.loli.net/2025/04/21/ESYsfBtkldgKCDU.jpg', caption: "Warming Hut Park Store" },
     { src: 'https://s2.loli.net/2025/04/21/LYw5WuCx2qpnIeV.jpg', caption: "Warming Hut Park Store" },
     { src: 'https://s2.loli.net/2025/04/21/Zl5vEAGyDNB1KSk.jpg', caption: "San Francisco" },
     
