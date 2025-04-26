@@ -4,10 +4,11 @@ import "./home.css";
 
 function Home() {
   const photoInfos = [
+    { src: "https://s2.loli.net/2025/04/26/vLHnhaRZFkWe7J5.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
     { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park" },
     { src: 'https://s2.loli.net/2025/04/20/yJjhKrUDgBdR9zm.jpg', caption: "Del Valle Regional Park" },
     { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill" },
-    { src: 'https://s2.loli.net/2025/04/20/6s8Hv4IyVapOdFr.jpg', caption: "Old St. Hilary's Landmark" },
     { src: 'https://s2.loli.net/2025/04/20/nF83zVtQ4up5WRL.jpg', caption: "The Museum of Fine Arts, Houston" },
     { src: 'https://s2.loli.net/2025/04/20/ZlfRV7SADnq6QuL.jpg', caption: "Pit Room, Houston" },
     { src: 'https://s2.loli.net/2025/04/21/4BUEkKiSwJxaGdu.jpg', caption: "San Francisco" },

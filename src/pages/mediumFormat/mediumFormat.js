@@ -3,7 +3,9 @@ import "./mediumFormat.css"
 
 function MediumFormat() {
   const photoUrls = [
-
+    { src: "https://s2.loli.net/2025/04/26/vLHnhaRZFkWe7J5.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: "https://s2.loli.net/2025/04/26/awsOJ8HKtiqDz5Q.jpg", caption: "Shark Fin Cove, Santa Cruz" },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -32,23 +34,22 @@ function MediumFormat() {
 
           <p>These images are not just documents — they're meditations. A slower shutter, a heavier frame, and a softer pace. That's the beauty of 120mm.</p>
         </div>
-        
         <div className="mediumFormat-gallery-container">
-          <p>Currently working on scanning the 120mm films, images are coming soon...</p>
-          <div className="gallery-wrapper">
-            {
-              photoUrls.map((photoUrl, index) => (
+          {
+            photoUrls.map((photoUrl, index) => (
+              <div className="mediumFormat-gallery-photo" key={index}> 
                 <img 
                   key={index} 
-                  src={photoUrl}
+                  src={photoUrl.src}
                   alt={`Gallery ${index}`}
-                  className={`gallery-image ${hoveredIndex === index ? 'scaled' : ''}`}
+                  className={`mediumFormat-gallery-image ${hoveredIndex === index ? 'scaled' : ''}`}
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={handleMouseLeave}
                 />
-              ))
-            }
-          </div>
+                <div className="mediumFormat-photo-caption">{photoUrl.caption}</div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>

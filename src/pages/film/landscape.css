@@ -67,7 +67,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex: 0 0 35%;
+    flex: 0 0 100%;
   }
   
   .landscape-gallery-image {
@@ -75,7 +75,6 @@
     max-height: 100%;
     object-fit: cover; /* not to shrink or expand the image */
     aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
-    scroll-snap-align: start;
     transition: transform 0.3s ease;
   }
   
@@ -88,6 +87,7 @@
     opacity: 0;
     transition: opacity 0.3s ease;
     pointer-events: none;
+    text-align: center;
   }
   
   /* Show caption on hover */
