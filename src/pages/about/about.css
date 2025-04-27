@@ -65,10 +65,13 @@
     font-size: large;
     color: #111827;
     margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .about-info p {
-    font-size: 15px;
+    font-size: 14.5px;
   }
 
   .about-info .equipment {

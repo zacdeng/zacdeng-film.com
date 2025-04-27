@@ -5,7 +5,7 @@ function About() {
     <div className="about-container">
       <div className="about-grid">
         <div className="about-info">
-          <h3>About Me</h3>
+          <h3>About Me <img src="https://s2.loli.net/2025/04/28/pwgiB4FhSxlXKLk.png" width="25px" alt="icon" /> </h3>
           <p><b>ZACH DENG</b> / based on Bay Area</p>
           <p>Photographer | Software Engineer</p>
           <p>You can find me at IG @zacdeng.film / 小红书 @瞎按快門 (ID: 497539155)</p>

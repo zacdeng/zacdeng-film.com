@@ -80,6 +80,10 @@
     color: #000000;
     font-size: small;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    img {
+      margin-top: 65%;
+    }
   }
 
   .sidebar ul {

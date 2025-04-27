@@ -54,6 +54,7 @@ function App() {
               <li><Link to="/mioandnova" onClick={() => setMenuOpen(false)}><b>Mio and Nova</b></Link></li>
               <li><Link to="/instant" onClick={() => setMenuOpen(false)}><b>The Instant Archive</b></Link></li>
               <li><Link to="/about" onClick={() => setMenuOpen(false)}><b>About Me</b></Link></li>
+              <li className="mobile-menu-icon"><img src="https://s2.loli.net/2025/04/28/pwgiB4FhSxlXKLk.png" width="40px" alt="icon" /></li>
             </ul>
           </nav>
 
