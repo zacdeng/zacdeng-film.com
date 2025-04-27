@@ -23,7 +23,7 @@ function MediumFormat() {
     <div className="mediumFormat-container">
       <div className="mediumFormat-grid">
         <div className="mediumFormat-info">
-          <h3>Stillness in Squares - 120mm</h3>
+          <h3>Stillness in Squares <img src="https://s2.loli.net/2025/04/28/dk2YijFWgtMDnUZ.png" width="28px" alt="instant"/> </h3>
           <p>This section is dedicated to my work with 120mm medium format film, all captured using the Bronica SQA — a beautifully crafted mechanical camera that rewards patience and precision. 
             Shooting with 120mm film isn't about speed or convenience; it's about slowing down and being intentional with each frame. With only 12 exposures per roll, 
             every shot counts, and that constraint adds a quiet discipline to the way I compose, focus, and see.</p>

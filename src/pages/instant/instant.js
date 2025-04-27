@@ -26,7 +26,7 @@ function Instant() {
     <div className="instant-container">
       <div className="instant-grid">
         <div className="instant-info">
-          <h3>Instant Archive</h3>
+          <h3>Instant Archive <img src="https://s2.loli.net/2025/04/28/zKGpHCcJMLnaTfD.png" width="25px" alt="instant"/> </h3>
           <p>This collection is all about the little moments — the kind you can't plan or edit. I've always loved instant film because it feels honest. 
             You get one shot, and whatever comes out is what you keep. It's imperfect, sometimes messy, but that's what makes it special.</p>
 

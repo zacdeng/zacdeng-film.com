@@ -46,7 +46,7 @@ function MioAndNova() {
     <div className="dog-container">
       <div className="dog-grid">
         <div className="dog-info">
-          <h3>Mio and Nova</h3>
+          <h3>Mio and Nova <img src="https://s2.loli.net/2025/04/28/qtpywO2ALSWPJu9.png" width="25px" alt="instant"/> </h3>
           <p>Some of my fondest memories are wrapped up in the everyday moments spent with my two mini dachshunds — both in that rich chocolate and tan coat that somehow makes their personalities shine even more. 
             They're small in size, but their energy and love take up the entire room. Whether it's the way they zoom across the living room like it's their personal racetrack, 
             or how they burrow under blankets until only their noses peek out, they've added warmth and laughter to my life in ways I never imagined.</p>

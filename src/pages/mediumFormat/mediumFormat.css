@@ -56,6 +56,9 @@
     font-size: 20px;
     color: #111827;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   .mediumFormat-grid p {
@@ -105,6 +108,9 @@
     font-size: large;
     color: #111827;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
   
   .mediumFormat-grid p {
