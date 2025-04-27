@@ -30,10 +30,16 @@
     font-size: 20px;
     color: #111827;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .about-info p {
     font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
   
   .about-info .equipment {
@@ -72,6 +78,9 @@
 
   .about-info p {
     font-size: 14.5px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .about-info .equipment {

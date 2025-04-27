@@ -26,11 +26,11 @@ function About() {
             </p>
           </div>
           
-          <p className='equipment'><b>EQUIPMENTS</b></p>
-          <p>Rollei 35 s</p>
-          <p>Bronica SQA</p>
-          <p>Fujifilm xs20</p>
-          <p>Fujifilm Instax Wide 300 / Mini 90</p>
+          <p className="equipment"><b>EQUIPMENTS</b></p>
+          <p><img src="https://s2.loli.net/2025/04/28/VWNFnxY5d12eBkH.png" width="25px" alt="rollei" />Rollei 35 s</p>
+          <p><img src="https://s2.loli.net/2025/04/28/Zt2VX9ieAgcUEoO.png" width="25px" alt="bronica" />Bronica SQA</p>
+          <p><img src="https://s2.loli.net/2025/04/28/NrCFDVEMRijPW8S.png" width="25px" alt="fujifilm" />Fujifilm xs20</p>
+          <p><img src="https://s2.loli.net/2025/04/28/zKGpHCcJMLnaTfD.png" width="25px" alt="instant" />Fujifilm Instax Wide 300 / Mini 90</p>
         </div>
         
         <div className="about-photo">
@@ -38,6 +38,10 @@ function About() {
         </div>
       </div>
     </div>
+
+
+
+
   );
 }
 
