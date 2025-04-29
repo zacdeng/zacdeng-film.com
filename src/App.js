@@ -10,6 +10,9 @@ import CityMuse from './pages/film/cityMuse.js'
 import MioAndNova from './pages/myDogs/mioNova.js';
 import MediumFormat from './pages/mediumFormat/mediumFormat.js';
 import ScrollToTop from './components/ScrollToTop';
+import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Analytics } from '@vercel/analytics/react';
+
 import "./App.css";
 
 function App() {
@@ -72,6 +75,8 @@ function App() {
             </Routes>
           </main>
         </div>
+        <SpeedInsights />
+        <Analytics />
       </BrowserRouter>
     )
   } else {
@@ -110,6 +115,8 @@ function App() {
             </Routes>
           </main>
         </div>
+        <SpeedInsights />
+        <Analytics />
       </BrowserRouter>
     );
   }
