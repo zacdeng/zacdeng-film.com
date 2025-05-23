@@ -6,6 +6,11 @@ function MediumFormat() {
     { src: "https://s2.loli.net/2025/04/26/vLHnhaRZFkWe7J5.jpg", caption: "Shark Fin Cove, Santa Cruz" },
     { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
     { src: "https://s2.loli.net/2025/04/26/awsOJ8HKtiqDz5Q.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: "https://s2.loli.net/2025/05/23/Ex3YvjlF8ZsrWnN.jpg", caption: "Pier 39, SF" },
+    { src: "https://s2.loli.net/2025/05/23/rbDuOgxc8tMJf35.jpg", caption: "Sunnyvale Bay Trail, Sunnyvale" },
+    { src: "https://s2.loli.net/2025/05/23/toIHQDhea3qlSrk.jpg", caption: "Sunnyvale Bay Trail, Sunnyvale" },
+    { src: "https://s2.loli.net/2025/05/23/hFNQU4ZJVWDdawj.jpg", caption: "Sunnyvale Bay Trail, Sunnyvale" },
+    { src: "https://s2.loli.net/2025/05/23/xMVSw4vNqUk2udI.jpg", caption: "Sunnyvale Bay Trail, Sunnyvale" },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
 

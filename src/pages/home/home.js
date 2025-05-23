@@ -9,9 +9,9 @@ function Home() {
     { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park" },
     { src: 'https://s2.loli.net/2025/04/20/yJjhKrUDgBdR9zm.jpg', caption: "Del Valle Regional Park" },
     { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill" },
-    { src: 'https://s2.loli.net/2025/04/20/nF83zVtQ4up5WRL.jpg', caption: "The Museum of Fine Arts, Houston" },
-    { src: 'https://s2.loli.net/2025/04/20/ZlfRV7SADnq6QuL.jpg', caption: "Pit Room, Houston" },
-    { src: 'https://s2.loli.net/2025/04/21/4BUEkKiSwJxaGdu.jpg', caption: "San Francisco" },
+    { src: "https://s2.loli.net/2025/05/23/toIHQDhea3qlSrk.jpg", caption: "Sunnyvale Bay Trail" },
+    { src: 'https://s2.loli.net/2025/05/23/94QaWlzvJ6XAfwr.jpg', caption: "Fort Mason, San Francisco" },
+    { src: 'https://s2.loli.net/2025/05/23/Li3spDufVR58yTz.jpg', caption: "Chinatown, San Francisco" },
   ];
 
   const isMobile = useDevice();
