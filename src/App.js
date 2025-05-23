@@ -50,7 +50,7 @@ function App() {
                 <ul className="sub-links">
                   <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
-                  <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li>
+                  {/* <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li> */}
                 </ul>
               </li>
               <li><Link to="/mediumformat" onClick={() => setMenuOpen(false)}><b>Stillness in Squares</b></Link></li>
@@ -91,7 +91,7 @@ function App() {
                 <ul className="sub-links">
                   <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
-                  <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li>
+                  {/* <li><Link to="/film/noirnotes" onClick={() => setMenuOpen(false)}>Noir Notes</Link></li> */}
                 </ul>
               </li>
               <li><Link to="/mediumformat" onClick={() => setMenuOpen(false)}>Stillness in Squares</Link></li>
@@ -99,6 +99,9 @@ function App() {
               <li><Link to="/instant" onClick={() => setMenuOpen(false)}>The Instant Archive</Link></li>
               <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Me</Link></li>
             </ul>
+            <div className="desktop-menu-icon">
+              <img src="https://s2.loli.net/2025/04/28/pwgiB4FhSxlXKLk.png" width="40px" alt="icon" />
+            </div>
           </nav>
   
           <main className="main-content">

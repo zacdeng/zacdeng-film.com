@@ -5,13 +5,13 @@ import "./home.css";
 function Home() {
   const photoInfos = [
     { src: "https://s2.loli.net/2025/04/26/vLHnhaRZFkWe7J5.jpg", caption: "Shark Fin Cove, Santa Cruz" },
-    { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
     { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park" },
-    { src: 'https://s2.loli.net/2025/04/20/yJjhKrUDgBdR9zm.jpg', caption: "Del Valle Regional Park" },
     { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill" },
     { src: "https://s2.loli.net/2025/05/23/toIHQDhea3qlSrk.jpg", caption: "Sunnyvale Bay Trail" },
+    { src: 'https://s2.loli.net/2025/05/23/RaeDBMnv9P2Yhjp.jpg', caption: "Fort Mason, San Francisco" },
     { src: 'https://s2.loli.net/2025/05/23/94QaWlzvJ6XAfwr.jpg', caption: "Fort Mason, San Francisco" },
     { src: 'https://s2.loli.net/2025/05/23/Li3spDufVR58yTz.jpg', caption: "Chinatown, San Francisco" },
+    { src: 'https://s2.loli.net/2025/05/23/BMXsEzYyA3kCImF.jpg', caption: "Marin County Civic Center, San Rafael" },
   ];
 
   const isMobile = useDevice();

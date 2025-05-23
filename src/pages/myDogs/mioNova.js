@@ -7,20 +7,14 @@ function MioAndNova() {
     'https://s2.loli.net/2025/04/21/NutP4DxFrlUIRsk.jpg',
     'https://s2.loli.net/2025/04/21/7fNpk5WtrFSyq1X.jpg',
     'https://s2.loli.net/2025/04/21/m4aPhC1O6ZoKsL7.jpg',
-    'https://s2.loli.net/2025/04/21/sTyFADftdI6BN34.jpg',
-    'https://s2.loli.net/2025/04/21/H9NhGQXyn6IFAKL.jpg',
     'https://s2.loli.net/2025/04/21/tkKprQaquPC753z.jpg',
     'https://s2.loli.net/2025/04/21/iI6BNrthC8EGMD9.jpg',
+    'https://s2.loli.net/2025/04/21/sTyFADftdI6BN34.jpg',
 
-
+    'https://s2.loli.net/2025/04/21/H9NhGQXyn6IFAKL.jpg',
     'https://s2.loli.net/2025/04/21/B4v6Ep9sOSjRIFb.jpg',
-    'https://s2.loli.net/2025/04/21/wKFdHigybC5hpGs.jpg',
     'https://s2.loli.net/2025/04/21/CtPvWcKLMly5dk2.jpg',
     'https://s2.loli.net/2025/04/21/uZCyUiYOpqKdJoA.jpg',
-    'https://s2.loli.net/2025/04/20/DwyOJF8x4qfcXn6.jpg',
-    'https://s2.loli.net/2025/04/20/FSgi5CeRJ2pP7xa.jpg',
-    'https://s2.loli.net/2025/04/20/cBwUDvs5fMuA38Z.jpg',
-    'https://s2.loli.net/2025/04/20/vUyY14a7V8LHJpi.jpg',
   ];
 
   const photoUrlsHorizonal = [

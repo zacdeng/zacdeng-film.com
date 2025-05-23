@@ -8,12 +8,11 @@
 
 .dog-grid {
   display: grid;
-  grid-template-columns: 1fr;
   gap: 2rem;
   width: 100%;
   align-items: start;
   background: #f9fafb;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
   color: #374151;
@@ -48,11 +47,11 @@
   }
   
   .dog-gallery-mionova-image-v.scaled {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }  
 
   .dog-gallery-mionova-image-h.scaled {
-    transform: scale(1.4);
+    transform: scale(1.2);
   }  
 
   .dog-grid h3 {
@@ -82,7 +81,7 @@
     aspect-ratio: 3 / 4; /* taller for caption space */
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
   }
   
   .dog-gallery-photo img {
