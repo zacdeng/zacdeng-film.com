@@ -61,38 +61,33 @@
 
 /* Mobile View */
 .mobile-landscape-wrapper {
+  .landscape-gallery-scroll {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 0.5fr));
+    gap: 1rem;
+    padding-top: 1rem;  
+  }
+
   .landscape-photo-wrapper {
-    position: relative;
-    display: flex;
+    margin-top: -1rem;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    flex: 0 0 100%;
   }
   
-  .landscape-gallery-image {
+  .landscape-photo-wrapper img {
     width: 100%;
     max-width: 100%;
     max-height: 100%;
-    object-fit: cover; /* not to shrink or expand the image */
-    aspect-ratio: 3 / 4;  /* aspect ratio; adjust as needed */
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
     transition: transform 0.3s ease;
   }
   
   .landscape-photo-caption {
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
-    font-size: small;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #374151;
     opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    text-align: center;
   }
-  
-  /* Show caption on hover */
-  .landscape-photo-wrapper:hover .landscape-photo-caption {
-    opacity: 1;
+
+  .landscape-gallery-image.scaled {
+    transform: scale(1.1);
   }
 }
