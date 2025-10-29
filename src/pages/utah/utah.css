@@ -1,0 +1,135 @@
+.utah-container {
+  padding: 1rem 1rem;
+  background-color: #f9fafb;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.utah-grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+  background: #f9fafb;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  color: #374151;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Desktop layout: 2 columns */
+@media (min-width: 768px) {
+  .utah-grid {
+    grid-template-columns: 0.7fr 3fr;
+  }
+
+  .utah-gallery-container {
+    display: flex;
+    flex-wrap: wrap;               /* Enable multiple rows */
+    overflow-x: auto;
+    gap: 2rem;
+    row-gap: 3rem;
+  }
+  
+  .utah-gallery-photo{
+    flex: 0 0 calc(24% - 1rem);    /* 4 images per row with gap */
+    scroll-snap-align: start;
+    margin-bottom: 1rem;
+  }
+  
+  .utah-gallery-photo img {
+    width: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 2;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .utah-gallery-image.scaled {
+    transform: scale(1.05);
+  }  
+
+  .utah-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .utah-grid p {
+    font-size: 16px;
+  }
+
+  .utah-photo-caption {
+    margin-top: 1rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  /* Show caption on hover */
+  .utah-gallery-photo:hover .utah-photo-caption {
+    opacity: 1;
+  }
+}
+
+/* Mobile View Settings */
+@media (max-width: 768px) {
+  .utah-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .utah-gallery-photo {
+    aspect-ratio: 3 / 2; /* taller for caption space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .utah-gallery-photo img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .utah-grid h3 {
+    font-size: large;
+    color: #111827;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .utah-grid p {
+    font-size: 15px;
+  }
+
+  .utah-photo-caption {
+    margin-top: 0.5rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center
+  }
+  
+  /* Show caption on hover */
+  .utah-gallery-photo:hover .utah-photo-caption {
+    opacity: 1;
+  }
+}
+
