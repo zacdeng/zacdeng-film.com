@@ -47,11 +47,11 @@
   }
   
   .landscape-gallery-image-h.scaled {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   .landscape-gallery-image-v.scaled {
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
   
   .landscape-photo-caption {
@@ -108,7 +108,11 @@
     opacity: 0;
   }
 
-  .landscape-gallery-image.scaled {
+  .landscape-gallery-image-h.scaled {
+    transform: scale(1.1);
+  }
+
+  .landscape-gallery-image-v.scaled {
     transform: scale(1.1);
   }
 }

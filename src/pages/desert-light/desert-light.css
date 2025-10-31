@@ -79,6 +79,10 @@
   .utah-gallery-photo:hover .utah-photo-caption {
     opacity: 1;
   }
+
+  .utah-gallery-image.scaled {
+    transform: scale(1.1);
+  }
 }
 
 /* Mobile View Settings */
@@ -106,19 +110,19 @@
   .utah-grid h3 {
     font-size: large;
     color: #111827;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
   }
   
   .utah-grid p {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .utah-photo-caption {
-    margin-top: 0.5rem;
-    font-size: small;
+    margin-top: 1rem;
+    font-size: x-small;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #374151;
     opacity: 0;
@@ -130,6 +134,10 @@
   /* Show caption on hover */
   .utah-gallery-photo:hover .utah-photo-caption {
     opacity: 1;
+  }
+
+  .utah-gallery-image.scaled {
+    transform: scale(1.1);
   }
 }
 

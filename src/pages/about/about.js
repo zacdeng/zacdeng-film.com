@@ -6,9 +6,9 @@ function About() {
       <div className="about-grid">
         <div className="about-info">
           <h3>About Me <img src="https://s2.loli.net/2025/04/28/pwgiB4FhSxlXKLk.png" width="25px" alt="icon" /> </h3>
-          <p><b>ZACH DENG</b> / based on Chicago</p>
+          <p><b>ZACH DENG</b> / Based on Chicago</p>
           <p>Photographer | Software Engineer</p>
-          <p>You can find me at IG @zacdeng.film / 小红书 @瞎按快門 (ID: 497539155)</p>
+          <p>You can find me at IG @zacdeng.film / Rednote @瞎按快門 (ID: 497539155)</p>
           <p>For inquires, please contact:</p>
 
           <div className="links">
@@ -34,7 +34,7 @@ function About() {
         </div>
         
         <div className="about-photo">
-          <img src="https://s2.loli.net/2025/10/30/wG5zgBM4XREbyWQ.jpg" alt="portfolio" />
+          <img src="https://s2.loli.net/2025/11/01/VkA1RITy2zb3gsl.jpg" alt="portfolio" />
         </div>
       </div>
     </div>

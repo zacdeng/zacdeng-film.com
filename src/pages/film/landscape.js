@@ -15,15 +15,18 @@ function Landscape() {
     { src: "https://s2.loli.net/2025/10/31/pn3krO6qzRebG9C.jpg", caption: "Morro Bay, California" },
     { src: "https://s2.loli.net/2025/10/31/Ul1kb9iSL6gGJtf.jpg", caption: "Morro Bay, California" },
     { src: "https://s2.loli.net/2025/10/31/R9H53ryIfspBQg8.jpg", caption: "Morro Bay, California" },
+    { src: "https://s2.loli.net/2025/11/01/cDZPC1QhXvkHpUu.jpg", caption: "Mono Lake, California" },
   ];
 
   const photoInfos_vertical = [
-    { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park" },
-    { src: 'https://s2.loli.net/2025/04/20/yJjhKrUDgBdR9zm.jpg', caption: "Del Valle Regional Park" },
-    { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill" },
-    { src: 'https://s2.loli.net/2025/04/20/6s8Hv4IyVapOdFr.jpg', caption: "Old St. Hilary's Landmark" },
-    { src: "https://s2.loli.net/2025/04/26/vLHnhaRZFkWe7J5.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park, California" },
+    { src: 'https://s2.loli.net/2025/04/20/yJjhKrUDgBdR9zm.jpg', caption: "Del Valle Regional Park, California" },
+    { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill, San Francisco" },
+    { src: 'https://s2.loli.net/2025/04/20/6s8Hv4IyVapOdFr.jpg', caption: "Old St. Hilary's Landmark, San Francisco" },
+    { src: "https://s2.loli.net/2025/11/01/haeGnOUuKYcH7qz.jpg", caption: "Brees Lookout, California" },
+    { src: "https://s2.loli.net/2025/11/01/MKIGAspo2CcQWJr.jpg", caption: "Brees Lookout, California" },
     { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
+    { src: "https://s2.loli.net/2025/11/01/p6oBJqVruabOd43.jpg", caption: "Bryce Canyon, Utah" },
   ]
 
   const isMobile = useDevice();
@@ -52,7 +55,7 @@ function Landscape() {
                     src={photoInfo.src}
                     alt={`Gallery ${index}`}
                     className={`landscape-gallery-image-h ${hoveredIndex === (index + 'h') ? 'scaled' : ''}`}
-                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseEnter={() => handleMouseEnter(index + 'h')}
                     onMouseLeave={handleMouseLeave}
                   />
                   <div className="landscape-photo-caption">{photoInfo.caption}</div>
@@ -69,7 +72,7 @@ function Landscape() {
                     src={photoInfo.src}
                     alt={`Gallery ${index}`}
                     className={`landscape-gallery-image-v ${hoveredIndex === (index + 'v') ? 'scaled' : ''}`}
-                    onMouseEnter={() => handleMouseEnter(index)}
+                    onMouseEnter={() => handleMouseEnter(index + 'v')}
                     onMouseLeave={handleMouseLeave}
                   />
                   <div className="landscape-photo-caption">{photoInfo.caption}</div>
