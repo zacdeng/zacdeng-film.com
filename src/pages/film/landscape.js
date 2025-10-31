@@ -4,12 +4,17 @@ import "./landscape.css";
 
 function Landscape() {
   const photoInfos_horizonal = [
-    { src: "https://s2.loli.net/2025/10/30/vY37FW2dnCTV89N.jpg", caption: "Capitol Reef, Utah" },
     { src: "https://s2.loli.net/2025/10/30/roy41OSgIcafETs.jpg", caption: "Brees Lookout, California" },
-    { src: "https://s2.loli.net/2025/10/30/cxLNqFahzytMf3A.jpg", caption: "Canyonlands, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/vY37FW2dnCTV89N.jpg", caption: "Capitol Reef, Utah" },
     { src: "https://s2.loli.net/2025/10/30/2yCdWu6BqD8jl94.jpg", caption: "Capitol Reef, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/okUAyJ3pZBaSIn8.jpg", caption: "Bryce Canyon, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/cxLNqFahzytMf3A.jpg", caption: "Canyonlands, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/tHlSE31Ofx5sA8g.jpg", caption: "Canyonlands, Utah" },
     { src: "https://s2.loli.net/2025/10/30/yXbLjQongvr5EiZ.jpg", caption: "Canyonlands, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/okUAyJ3pZBaSIn8.jpg", caption: "Bryce Canyon, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/pKZ1ntXuvQ82lY4.jpg", caption: "Bryce Canyon, Utah" },
+    { src: "https://s2.loli.net/2025/10/31/pn3krO6qzRebG9C.jpg", caption: "Morro Bay, California" },
+    { src: "https://s2.loli.net/2025/10/31/Ul1kb9iSL6gGJtf.jpg", caption: "Morro Bay, California" },
+    { src: "https://s2.loli.net/2025/10/31/R9H53ryIfspBQg8.jpg", caption: "Morro Bay, California" },
   ];
 
   const photoInfos_vertical = [

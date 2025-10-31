@@ -1,26 +1,33 @@
 import { useState } from 'react';
-import "./utah.css"
+import "./desert-light.css"
 
-function Utah() {
+function DesertLight() {
   const photoUrls = [
     { src: "https://s2.loli.net/2025/10/30/vY37FW2dnCTV89N.jpg", caption: "Capitol Reef, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/okUAyJ3pZBaSIn8.jpg", caption: "Bryce Canyon, Utah" },
     { src: "https://s2.loli.net/2025/10/30/hUAE9wTxuSB7cMD.jpg", caption: "Capitol Reef, Utah" },
     { src: "https://s2.loli.net/2025/10/30/2yCdWu6BqD8jl94.jpg", caption: "Capitol Reef, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/vmIkZgQRXbAn9DM.jpg", caption: "Capitol Reef, Utah" },
 
+    { src: "https://s2.loli.net/2025/10/30/pKZ1ntXuvQ82lY4.jpg", caption: "Bryce Canyon, Utah" },
     { src: "https://s2.loli.net/2025/10/30/cxLNqFahzytMf3A.jpg", caption: "Canyonlands, Utah" },
     { src: "https://s2.loli.net/2025/10/30/yXbLjQongvr5EiZ.jpg", caption: "Canyonlands, Utah" },
     { src: "https://s2.loli.net/2025/10/30/tHlSE31Ofx5sA8g.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/4aXmqu2IlBFifGQ.jpg", caption: "Canyonlands, Utah" },
 
-    { src: "https://s2.loli.net/2025/10/30/okUAyJ3pZBaSIn8.jpg", caption: "Bryce Canyon, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/pKZ1ntXuvQ82lY4.jpg", caption: "Bryce Canyon, Utah" },
+    { src: "https://s2.loli.net/2025/10/31/agx5F7cSXNqoeHm.jpg", caption: "Utah" },
+    { src: "https://s2.loli.net/2025/10/30/4aXmqu2IlBFifGQ.jpg", caption: "Canyonlands, Utah" },
     { src: "https://s2.loli.net/2025/10/30/XDZRC6dnTI2mWGE.jpg", caption: "Bryce Canyon, Utah" },
     { src: "https://s2.loli.net/2025/10/30/KIm6fosOUrYlXun.jpg", caption: "Bryce Canyon, Utah" },
 
-    { src: "https://s2.loli.net/2025/10/30/4SLmrONbs7zgnWi.jpg", caption: "Canyonlands, Utah" },
+    
+    { src: "https://s2.loli.net/2025/10/30/4SLmrONbs7zgnWi.jpg", caption: "Canyonlands, Utah" },    
     { src: "https://s2.loli.net/2025/10/30/d5zVjC8SqZu9Nok.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/b3fJd96K1uOqLEi.jpg", caption: "Bryce Canyon, Utah" },
+    { src: "https://s2.loli.net/2025/10/31/BHVcX9tZDg5OGNl.jpg", caption: "Utah" },
+    { src: "https://s2.loli.net/2025/10/31/nZk7tGicw1uNfFR.jpg", caption: "Utah" },
+
+    { src: "https://s2.loli.net/2025/10/31/GwA75T1XjK3WmtE.jpg", caption: "Utah" },
+    { src: "https://s2.loli.net/2025/10/31/QKiTCY4B6tSdWLP.jpg", caption: "Utah" },
+    { src: "https://s2.loli.net/2025/10/31/Mp9dQwrEAsD2kBX.jpg", caption: "Utah" },
+    { src: "https://s2.loli.net/2025/10/31/9LV2fDHjZ5lTJaC.jpg", caption: "Utah" },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -74,4 +81,4 @@ function Utah() {
   )
 }
 
-export default Utah
+export default DesertLight
