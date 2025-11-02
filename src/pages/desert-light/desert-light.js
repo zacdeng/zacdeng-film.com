@@ -20,12 +20,10 @@ function DesertLight() {
 
     
     { src: "https://s2.loli.net/2025/10/30/4SLmrONbs7zgnWi.jpg", caption: "Canyonlands, Utah" },    
-    { src: "https://s2.loli.net/2025/10/30/d5zVjC8SqZu9Nok.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/31/BHVcX9tZDg5OGNl.jpg", caption: "Utah" },
     { src: "https://s2.loli.net/2025/10/31/nZk7tGicw1uNfFR.jpg", caption: "Utah" },
-
+    { src: "https://s2.loli.net/2025/10/31/BHVcX9tZDg5OGNl.jpg", caption: "Utah" },
     { src: "https://s2.loli.net/2025/10/31/GwA75T1XjK3WmtE.jpg", caption: "Utah" },
-    { src: "https://s2.loli.net/2025/10/31/QKiTCY4B6tSdWLP.jpg", caption: "Utah" },
+    
     { src: "https://s2.loli.net/2025/10/31/Mp9dQwrEAsD2kBX.jpg", caption: "Utah" },
     { src: "https://s2.loli.net/2025/10/31/9LV2fDHjZ5lTJaC.jpg", caption: "Utah" },
   ];
