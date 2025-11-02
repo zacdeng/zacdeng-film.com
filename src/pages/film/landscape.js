@@ -25,7 +25,6 @@ function Landscape() {
     { src: 'https://s2.loli.net/2025/04/20/6s8Hv4IyVapOdFr.jpg', caption: "Old St. Hilary's Landmark, San Francisco" },
     { src: "https://s2.loli.net/2025/11/01/haeGnOUuKYcH7qz.jpg", caption: "Brees Lookout, California" },
     { src: "https://s2.loli.net/2025/11/01/MKIGAspo2CcQWJr.jpg", caption: "Brees Lookout, California" },
-    { src: "https://s2.loli.net/2025/04/26/tewZmaSHzTloUYb.jpg", caption: "Shark Fin Cove, Santa Cruz" },
     { src: "https://s2.loli.net/2025/11/01/p6oBJqVruabOd43.jpg", caption: "Bryce Canyon, Utah" },
   ]
 
