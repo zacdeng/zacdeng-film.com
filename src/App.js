@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Home from './pages/home/home.js';
+import NewYorkCity from "./pages/nyc/nyc.js";
 import About from './pages/about/about.js';
 import Instant from './pages/instant/instant.js';
 import Landscape from './pages/film/landscape.js'
@@ -46,12 +47,13 @@ function App() {
               <li>
                 <b>Film Collections</b>
                 <ul className="sub-links">
-                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
+                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                 </ul>
               </li>
+              <li><Link to="/nyc" onClick={() => setMenuOpen(false)}><b>The New York City</b></Link></li>
               <li><Link to="/desert-light" onClick={() => setMenuOpen(false)}><b>Desert Light in Frames</b></Link></li>
-              <li><Link to="/instant" onClick={() => setMenuOpen(false)}><b>The Instant Archive</b></Link></li>
+              {/* <li><Link to="/instant" onClick={() => setMenuOpen(false)}><b>The Instant Archive</b></Link></li> */}
               <li><Link to="/about" onClick={() => setMenuOpen(false)}><b>About Me</b></Link></li>
               <li className="mobile-menu-icon"><img src="https://s2.loli.net/2025/04/28/pwgiB4FhSxlXKLk.png" width="40px" alt="icon" /></li>
             </ul>
@@ -63,8 +65,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/film/landscape" element={<Landscape />} />
               <Route path="/film/citymuse" element={<CityMuse />} />
+              <Route path="/nyc" element={<NewYorkCity />} />
               <Route path="/desert-light" element={<DesertLight />} />
-              <Route path="/instant" element={<Instant />} />
+              {/* <Route path="/instant" element={<Instant />} /> */}
               <Route path="/about" element={<About />} />
             </Routes>
           </main>
@@ -87,8 +90,9 @@ function App() {
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
                 </ul>
               </li>
+              <li><Link to="/nyc" onClick={() => setMenuOpen(false)}>The New York City</Link></li>
               <li><Link to="/desert-light" onClick={() => setMenuOpen(false)}>Desert Light in Frames</Link></li>
-              <li><Link to="/instant" onClick={() => setMenuOpen(false)}>The Instant Archive</Link></li>
+              {/* <li><Link to="/instant" onClick={() => setMenuOpen(false)}>The Instant Archive</Link></li> */}
               <li><Link to="/about" onClick={() => setMenuOpen(false)}>About Me</Link></li>
             </ul>
             <div className="desktop-menu-icon">
@@ -102,8 +106,9 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/film/landscape" element={<Landscape />} />
               <Route path="/film/citymuse" element={<CityMuse />} />
+              <Route path="/nyc" element={<NewYorkCity />} />
               <Route path="/desert-light" element={<DesertLight />} />
-              <Route path="/instant" element={<Instant />} />
+              {/* <Route path="/instant" element={<Instant />} /> */}
               <Route path="/about" element={<About />} />
             </Routes>
           </main>

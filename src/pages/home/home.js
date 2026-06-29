@@ -4,19 +4,22 @@ import "./home.css";
 
 function Home() {
   const photoInfos_horizonal = [
+    { src: 'https://files.seeusercontent.com/2026/06/29/wC5a/May-14-2026-DSCF4781.jpg', caption: 'Central Park, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/29/H6hc/May-17-2026-DSCF4873.jpg', caption: 'The Edge, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/29/v3Ua/May-17-2026-DSCF4962.jpg', caption: 'Staten Island Ferry, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/29/4Qjd/November-24-2025-DSCF3908.jpg', caption: 'Top of the Rock, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/29/0Sve/May-14-2026-DSCF4725.jpg', caption: 'Manhattan Bridge, New York' },
     { src: "https://s2.loli.net/2025/10/30/vY37FW2dnCTV89N.jpg", caption: "Capitol Reef, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/roy41OSgIcafETs.jpg", caption: "Brees Lookout, California" },
     { src: "https://s2.loli.net/2025/10/30/cxLNqFahzytMf3A.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/2yCdWu6BqD8jl94.jpg", caption: "Capitol Reef, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/okUAyJ3pZBaSIn8.jpg", caption: "Bryce Canyon, Utah" },
   ];
 
   const photoInfos_vertical = [
-    { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill" },
-    { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park" },
-    { src: 'https://s2.loli.net/2025/05/23/RaeDBMnv9P2Yhjp.jpg', caption: "Fort Mason, San Francisco" },
+    { src: 'https://files.seeusercontent.com/2026/06/29/4Idm/May-14-2026-DSCF4778.jpg', caption: 'West Village, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/29/4kpQ/May-14-2026-DSCF4756.jpg', caption: 'Grand Central Terminal, New York' },
     { src: 'https://s2.loli.net/2025/05/23/Li3spDufVR58yTz.jpg', caption: "Chinatown, San Francisco" },
-    { src: 'https://s2.loli.net/2025/05/23/BMXsEzYyA3kCImF.jpg', caption: "Marin County Civic Center, San Rafael" },
+    { src: 'https://files.seeusercontent.com/2026/06/29/7Txi/November-24-2025-DSCF3872.jpg', caption: 'Chinatown, New York' },
+    { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill, San Francisco" },
+    { src: 'https://s2.loli.net/2025/04/20/ncJgkM8vfHei6Qz.jpg', caption: "Del Valle Regional Park, Bay Area" },
   ]
   const isMobile = useDevice();
   const [hoveredIndex, setHoveredIndex] = useState(null);

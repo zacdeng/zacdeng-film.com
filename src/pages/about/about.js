@@ -27,10 +27,10 @@ function About() {
           </div>
           
           <p className="equipment"><b>EQUIPMENTS</b></p>
-          <p><img src="https://s2.loli.net/2025/04/28/VWNFnxY5d12eBkH.png" width="25px" alt="rollei" />Rollei 35s | Contax G1</p>
-          <p><img src="https://s2.loli.net/2025/05/21/9lO3dvGxmoj4Mzq.png" width="25px" alt="bronica" />Mamiya 645 1000s | Bronica SQA</p>
-          <p><img src="https://s2.loli.net/2025/04/28/NrCFDVEMRijPW8S.png" width="25px" alt="fujifilm" />Fujifilm xs20</p>
-          <p><img src="https://s2.loli.net/2025/04/28/zKGpHCcJMLnaTfD.png" width="25px" alt="instant" />Fujifilm Instax Wide 300 | Mini 90</p>
+          <p><img src="https://s2.loli.net/2025/04/28/VWNFnxY5d12eBkH.png" width="25px" alt="35mm" />Leica M6 | Contax G2 | Minolta TC-1 | Konica Hexar AF | Pentax 17 | Rollei 35s</p>
+          <p><img src="https://s2.loli.net/2025/05/21/9lO3dvGxmoj4Mzq.png" width="25px" alt="Medium Format" />Mamiya 645 1000s | Bronica SQA</p>
+          <p><img src="https://s2.loli.net/2025/04/28/zKGpHCcJMLnaTfD.png" width="25px" alt="Instant" />Fujifilm Instax Wide 300 | Mini 90</p>
+          <p><img src="https://s2.loli.net/2025/04/28/NrCFDVEMRijPW8S.png" width="25px" alt="Digit" />Fujifilm xs20</p>
         </div>
         
         <div className="about-photo">

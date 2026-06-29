@@ -1,0 +1,143 @@
+.nyc-container {
+  padding: 1rem 1rem;
+  background-color: #f9fafb;
+  min-height: 90vh;
+  display: flex;
+  justify-content: center;
+}
+
+.nyc-grid {
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+  align-items: start;
+  background: #f9fafb;
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  color: #374151;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Desktop layout: 2 columns */
+@media (min-width: 768px) {
+  .nyc-grid {
+    grid-template-columns: 0.7fr 3fr;
+  }
+
+  .nyc-gallery-container {
+    display: flex;
+    flex-wrap: wrap;               /* Enable multiple rows */
+    overflow-x: auto;
+    gap: 2rem;
+    row-gap: 3rem;
+  }
+  
+  .nyc-gallery-photo{
+    flex: 0 0 calc(24% - 1rem);    /* 4 images per row with gap */
+    scroll-snap-align: start;
+    margin-bottom: 1rem;
+  }
+  
+  .nyc-gallery-photo img {
+    width: 100%;
+    object-fit: cover; /* not to shrink or expand the image */
+    aspect-ratio: 3 / 2;  /* aspect ratio; adjust as needed */
+    scroll-snap-align: start;
+    transition: transform 0.3s ease;
+  }
+  
+  .nyc-gallery-image.scaled {
+    transform: scale(1.05);
+  }  
+
+  .nyc-grid h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nyc-grid p {
+    font-size: 16px;
+  }
+
+  .nyc-photo-caption {
+    margin-top: 1rem;
+    font-size: small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center;
+  }
+
+  /* Show caption on hover */
+  .nyc-gallery-photo:hover .nyc-photo-caption {
+    opacity: 1;
+  }
+
+  .nyc-gallery-image.scaled {
+    transform: scale(1.1);
+  }
+}
+
+/* Mobile View Settings */
+@media (max-width: 768px) {
+  .nyc-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 1rem;
+    padding-top: 1rem;
+  }
+  
+  .nyc-gallery-photo {
+    aspect-ratio: 3 / 2; /* taller for caption space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .nyc-gallery-photo img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .nyc-grid h3 {
+    font-size: large;
+    color: #111827;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .nyc-grid p {
+    font-size: 13px;
+  }
+
+  .nyc-photo-caption {
+    margin-top: 1rem;
+    font-size: x-small;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #374151;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    text-align: center
+  }
+  
+  /* Show caption on hover */
+  .nyc-gallery-photo:hover .nyc-photo-caption {
+    opacity: 1;
+  }
+
+  .nyc-gallery-image.scaled {
+    transform: scale(1.1);
+  }
+}
+
