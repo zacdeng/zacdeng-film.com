@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Home from './pages/home/home.js';
 import NewYorkCity from "./pages/nyc/nyc.js";
 import About from './pages/about/about.js';
-import Instant from './pages/instant/instant.js';
+// import Instant from './pages/instant/instant.js';
 import Landscape from './pages/film/landscape.js'
 import CityMuse from './pages/film/cityMuse.js'
 import DesertLight from './pages/desert-light/desert-light.js';
