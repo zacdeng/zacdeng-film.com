@@ -16,6 +16,7 @@ function Home() {
   const photoInfos_vertical = [
     { src: 'https://files.seeusercontent.com/2026/06/29/4Idm/May-14-2026-DSCF4778.jpg', caption: 'West Village, New York' },
     { src: 'https://files.seeusercontent.com/2026/06/29/4kpQ/May-14-2026-DSCF4756.jpg', caption: 'Grand Central Terminal, New York' },
+    { src: 'https://files.seeusercontent.com/2026/06/30/hy1D/May-17-2026-DSCF4986-2.jpg', caption: 'Chinatown' },
     { src: 'https://s2.loli.net/2025/05/23/Li3spDufVR58yTz.jpg', caption: "Chinatown, San Francisco" },
     { src: 'https://files.seeusercontent.com/2026/06/29/7Txi/November-24-2025-DSCF3872.jpg', caption: 'Chinatown, New York' },
     { src: 'https://s2.loli.net/2025/04/20/vto981nQWe4GxHa.jpg', caption: "Slackers Hill, San Francisco" },

@@ -47,8 +47,8 @@ function App() {
               <li>
                 <b>Film Collections</b>
                 <ul className="sub-links">
-                  <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
                   <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
+                  <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
                 </ul>
               </li>
               <li><Link to="/nyc" onClick={() => setMenuOpen(false)}><b>The New York City</b></Link></li>
@@ -86,8 +86,8 @@ function App() {
               <li>
                 Film Collections
                 <ul className="sub-links">
-                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                   <li><Link to="/film/citymuse" onClick={() => setMenuOpen(false)}>Civic Muse</Link></li>
+                  <li><Link to="/film/landscape" onClick={() => setMenuOpen(false)}>Landscape</Link></li>
                 </ul>
               </li>
               <li><Link to="/nyc" onClick={() => setMenuOpen(false)}>The New York City</Link></li>

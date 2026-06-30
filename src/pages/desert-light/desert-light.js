@@ -10,13 +10,13 @@ function DesertLight() {
 
     { src: "https://s2.loli.net/2025/10/30/pKZ1ntXuvQ82lY4.jpg", caption: "Bryce Canyon, Utah" },
     { src: "https://s2.loli.net/2025/10/30/cxLNqFahzytMf3A.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/yXbLjQongvr5EiZ.jpg", caption: "Canyonlands, Utah" },
+    { src: "https://s2.loli.net/2025/10/30/4aXmqu2IlBFifGQ.jpg", caption: "Canyonlands, Utah" },
     { src: "https://s2.loli.net/2025/10/30/tHlSE31Ofx5sA8g.jpg", caption: "Canyonlands, Utah" },
 
     { src: "https://s2.loli.net/2025/10/30/XDZRC6dnTI2mWGE.jpg", caption: "Bryce Canyon, Utah" },
     { src: "https://s2.loli.net/2025/10/30/KIm6fosOUrYlXun.jpg", caption: "Bryce Canyon, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/4aXmqu2IlBFifGQ.jpg", caption: "Canyonlands, Utah" },
-    { src: "https://s2.loli.net/2025/10/30/4SLmrONbs7zgnWi.jpg", caption: "Canyonlands, Utah" },
+    { src: "https://files.seeusercontent.com/2026/06/30/o1cC/DSCF3806.jpg", caption: "Brees Lookout, CA" },
+    { src: "https://files.seeusercontent.com/2026/06/30/R8kq/DSCF3845.jpg", caption: "Canyonlands, Utah" },
   ];
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
